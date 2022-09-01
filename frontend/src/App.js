@@ -14,7 +14,6 @@ function App() {
     .then(res => res.json())
     .then(data => setData(data))
   }, [])  
-  
   return (
     <div className="App">
       <h1>{data.name}</h1>
