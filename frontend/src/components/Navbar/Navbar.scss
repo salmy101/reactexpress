@@ -1,0 +1,30 @@
+.nav{
+  height: 120px;
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: space-between;
+  padding: 35px;
+  top: 0; /* Position the navbar at the top of the page */
+  position: fixed;
+  width: 100vw;
+
+}
+
+.nav ul {
+  /* margin:0; */
+  display: flex;
+  list-style: none;
+  gap: 3rem;
+}
+
+.nav-item {
+  text-decoration: none;
+  font-size: 20px;
+  display: flex;
+  color: #000;
+}
+.main-menue{
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}

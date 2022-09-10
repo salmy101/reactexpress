@@ -1,0 +1,62 @@
+body{
+  margin-top: 130px;
+}
+.intro{ //my name at the top
+  border-bottom: 0.5px solid #000000;
+  margin: 20px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 
+}
+.intro-2{ //my notice borad at the bottom
+  border-top: 0.5px solid #000000;
+  margin: 20px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px
+}
+.intro-main{ // the middle sectino with a welcome message and images
+  // border: 0.5px solid #000000;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding: 20px
+
+}
+
+.intro-msg{ //welcome message
+  border: 0.5px solid #000000;
+  width: 40vw;
+  height: 50vh;
+}
+
+.intro-image{ //home images
+  border: 0.5px solid #000000;
+  width: 40vw;
+  height: 50vh;
+  margin: 0 auto;
+}
+.main-header{ //holding the whole component
+  // border-radius: 25px;
+  border: 2px solid #000000;
+  width: 95vw;
+  height: 80vh;
+  margin-left: 2.5vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px;
+  
+}
+

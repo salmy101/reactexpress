@@ -1,27 +1,21 @@
-import React, {useEffect, useState} from "react";
-import './App.css';
+import React from "react";
+import "./App.scss";
+import { About, Header, Projects, Skills, Footer } from "./container/index";
+import Navbar from "./components/Navbar/Navbar";
 
-function App() {
-  const [data, setData] = useState({})
-
-  useEffect(() => { //fetches the api route in backend, 
-    fetch("/api/data", {
-      // headers : { 
-      //   'Content-Type': 'application/json'
-      //   // 'Accept': 'application/json'
-      //  }
-    })
-    .then(res => res.json())
-    .then(data => setData(data))
-  }, [])  
+const App = () => {
   return (
     <div className="App">
-      <h1>{data.name}</h1>
-      <p>{data.age}</p>
-      <p>{data.food}</p>
+      <Navbar />
+      <Header />
+    
 
+      {/* <About />
+      <Projects />
+      <Skills />
+      <Footer /> */}
     </div>
   );
-}
+};
 
 export default App;
