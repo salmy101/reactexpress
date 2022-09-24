@@ -3,9 +3,12 @@ import "./About.scss";
 
 const About = () => {
   return (
+    <section id="About">
+
     <div className="main-header">
-      <h1>More about information??</h1>
+      <h1>about??</h1>
     </div>
+    </section>
   );
 };
 

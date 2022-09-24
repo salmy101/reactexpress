@@ -10,8 +10,8 @@ const Navbar = () => {
       </div>
       <div className="main-menue">
         <ul>
-          {['Home', 'About','Projects', 'Skills', 'Contact'].map((item) => (
-            <li key={`linnk-${item}`}>
+          {['Home', 'About','Skills','Projects',  'Contact'].map((item) => (
+            <li key={`link-${item}`}>
             <a href={`#${item}`} className="nav-item">{item}</a>
           </li>
           ))}

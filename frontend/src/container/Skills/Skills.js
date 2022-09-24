@@ -3,9 +3,12 @@ import "./Skills.scss";
 
 const Skills = () => {
   return (
+    <section id="Skills">
+
     <div className="main-header">
-      <section className="skills section" id="skills"></section>
-    </div>
+    <h1>skills??</h1>
+  </div>
+  </section>
   );
 };
 
