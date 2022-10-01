@@ -11,7 +11,7 @@ export const ProjectCard = (props) => {
     display: "block"
   };
   
-  console.log(props)
+  // console.log(props)
 
   return (
     <>

@@ -1,43 +1,32 @@
-import React from "react";
+import React, {useEffect, useRef, useState} from "react";
+import { useInView } from 'react-intersection-observer';
+
 import "./Skills.scss";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
 const Skills = () => {
-  const responsive = {
-    superLargeDesktop: {
-      // the naming can be any, depends on you.
-      breakpoint: { max: 4000, min: 3000 },
-      items: 5,
-    },
-    desktop: {
-      breakpoint: { max: 3000, min: 1024 },
-      items: 3,
-    },
-    tablet: {
-      breakpoint: { max: 1024, min: 464 },
-      items: 2,
-    },
-    mobile: {
-      breakpoint: { max: 464, min: 0 },
-      items: 1,
-    },
-  };
+  const { ref: myRef, inView: visible } = useInView();
+
+
+  // const myRef = useRef()
+  // const [visible, setVisible] = useState()
+  // console.log("is element visible", visible)
+  // useEffect(() => {
+  //   console.log("MyRef", myRef.current);
+  //   const observer = new IntersectionObserver((entries) => {
+  //     const entry = entries[0];
+  //     setVisible(entry.isIntersecting)
+  //   })
+  //   observer.observe(myRef.current)
+
+  // }, []);
   return (
     <section id="Skills">
       <div className="main-header">
-        <div className="skills-container">
-            {/* <div className="skills-info">stuff about my skills and whee i learnt them</div> */}
-          <div className="skills-carosel">
-          <Carousel responsive={responsive} infinite={true} className="carosel">
-            <div>1</div>
-            <div>4</div>
-            <div>2</div>
-            <div>6</div>
-            <div>5</div>
-          </Carousel>
-          </div>
-        </div>
+        <h2 ref={myRef} className={`${visible ? animateSlide : ''}`}> My Skills</h2>
+        {visible ? <p>YESSS</p> : <p>NOOO</p>}
+        
       </div>
     </section>
   );

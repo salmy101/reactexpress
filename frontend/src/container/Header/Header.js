@@ -26,8 +26,8 @@ const Header = () => {
     <section id="Home">
       <div className="main-header">
         <div className="intro" >
-          <h1>
-            <Typewriter id="obfuscated"
+          <h1> Welcome To My Portfolio 
+            {/* <Typewriter id="obfuscated"
               textStyle={{
                 fontSize: "20px",
               }}
@@ -40,7 +40,7 @@ const Header = () => {
                   // .typeString("My Name is...")
                   .start();
               }}
-            />
+            /> */}
           </h1>
            {/* <h3 id="obfuscated">Salma!</h3> */}
           
