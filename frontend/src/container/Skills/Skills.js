@@ -26,7 +26,7 @@ const Skills = () => {
     <section id="Skills">
       <div className="skills-section">
         <div className="skills__header">
-        <h2>My Skills</h2>
+        <h2>Skills</h2>
         <span>my technical level</span>
         </div>
         <div className="skills__container container grid">
