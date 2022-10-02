@@ -1,13 +1,14 @@
-import React, {useEffect, useRef, useState} from "react";
-import { useInView } from 'react-intersection-observer';
+import React, { useEffect, useRef, useState } from "react";
+import { useInView } from "react-intersection-observer";
 
 import "./Skills.scss";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import Frontend from "./Frontend";
+import Backend from "./Backend";
 
 const Skills = () => {
   const { ref: myRef, inView: visible } = useInView();
-
 
   // const myRef = useRef()
   // const [visible, setVisible] = useState()
@@ -23,10 +24,15 @@ const Skills = () => {
   // }, []);
   return (
     <section id="Skills">
-      <div className="main-header">
-        <h2 ref={myRef} className={`${visible ? animateSlide : ''}`}> My Skills</h2>
-        {visible ? <p>YESSS</p> : <p>NOOO</p>}
-        
+      <div className="skills-section">
+        <div className="skills__header">
+        <h2>My Skills</h2>
+        <span>my technical level</span>
+        </div>
+        <div className="skills__container container grid">
+          <Frontend />
+          <Backend />
+        </div>
       </div>
     </section>
   );
