@@ -1,3 +1,31 @@
-.about{
-   border: 0.5px solid #000000;
-}
+.about-section{ //holding the whole component
+   border-radius: 25px;
+   border: 2px solid #000000;
+   width: 95vw;
+   height: 60vh;
+   margin: 2.5vw;
+   display: flex;
+   flex-direction: column;
+   // align-items: center;
+   // justify-content: space-between;
+   padding: 30px;
+   
+ }
+
+
+ .about__container {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    column-gap: 4rem;
+    border: 2px solid #000000;
+
+
+ }
+
+ .about__img{
+    width: 350px;
+    height: 400px;
+    border-radius: 1.5rem;
+    justify-self: center;
+
+ }
